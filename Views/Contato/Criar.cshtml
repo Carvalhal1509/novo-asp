@@ -1,0 +1,91 @@
+﻿@{
+   ViewData["Title"] = "criar contato";
+
+}
+
+
+
+
+
+<div class="box box-primary" style="padding: 20px;">
+    <div id="overlay" class="overlay" style="display: none;">
+        <center><i style="margin: 150px;" class="fa fa-refresh fa-spin"></i></center>
+    </div>
+    
+        <div class="box-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="msgError" class="alert alert-danger alert-dismissible fade in mgtp" style="display: none;">
+                        <i class="fa fa-ban"></i>
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+                        <span id="erroMsg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Condutor</label>
+                        <input class="form-control" id="condutor" name="condutor" disabled />
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Cpf</label>
+                        <input class="form-control" id="cpf" name="cps" disabled />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Endereço</label>
+                        <input class="form-control" id="endereço" name="email" disabled />
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>CEP</label>
+                        <input class="form-control" id="cep" name="cep" disabled />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Formulário CNH</label>
+                        <input class="form-control" id="formulario" name="formulario" disabled />
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Registro</label>
+                        <input class="form-control" id="registro" name="registro" disabled />
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>1a habilitação</label>
+                        <input class="form-control" id="1ahabilitacao" name="1ahabilitacao" disabled />
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <input class="form-control" id="categoria" name="categoria" disabled />
+                    </div>
+                </div>
+
+
+
+                <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+                <button type="submit" class="btn btn-primary btn-block">Continuar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+              
